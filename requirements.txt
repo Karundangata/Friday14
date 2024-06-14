@@ -1,0 +1,14 @@
+ init -y
+  express @types/express @types/node
+ dotenv mssql @types/mssql uuid
+ concurrently
+ nodemon
+
+json-server --save-dev
+ bcrypt joi @types/joi @types/bycrpt
+jwt
+ we-tokens
+ ejs
+ --save-dev @types/ejs
+ nodemailer @types
+ --save-dev node-cron

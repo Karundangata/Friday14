@@ -1,0 +1,26 @@
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Book",
+    "price": 200
+}
+
+#########
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Pen",
+    "price": 15
+}
+
+#########
+GET http://localhost:3000/api/products/search?name=Book
+
+#########
+GET http://localhost:3000/api/products?page=1&limit=5
+
+
+#########
+GET http://localhost:3000/api/products/filter?minPrice=100&maxPrice=300&name=Book
